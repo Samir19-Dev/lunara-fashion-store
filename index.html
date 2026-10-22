@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNARA FASHION STORE — Tu estilo, tu esencia, tu momento</title>
+<meta name="description" content="LUNARA FASHION STORE: tienda de moda con prendas para mujer y hombre. Catálogo completo, tallas, colores, precios en COP y compras en línea.">
+<meta name="author" content="LUNARA FASHION STORE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#10052;</text></svg>">
+</head>
+<body>
+
+<!-- ==================== ENCABEZADO / NAVEGACIÓN ==================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header__inner">
+
+    <a class="brand" href="#inicio" aria-label="LUNARA FASHION STORE, ir al inicio">
+      <span class="brand__logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="logo__svg">
+          <path d="M32 10c-4 0-7.2 3.2-7.2 7.2 0 2.6 1.4 4.9 3.5 6.1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M28.3 23.3 11 38.9c-1.6 1.4-.5 4 1.8 4h38.4c2.3 0 3.4-2.6 1.8-4L35.7 23.3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M47 5a10.5 10.5 0 1 0 7.8 17.3A12.5 12.5 0 0 1 47 5Z" fill="currentColor" opacity="0.85"/>
+          <path d="M50.5 27c.75 3.6 1.85 4.7 5.45 5.45-3.6.75-4.7 1.85-5.45 5.45-.75-3.6-1.85-4.7-5.45-5.45 3.6-.75 4.7-1.85 5.45-5.45Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name" data-text="LUNARA FASHION STORE">LUNARA FASHION STORE</span>
+        <span class="brand__slogan">Tu estilo, tu esencia, tu momento</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Menú principal">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="#inicio" data-nav="inicio">Inicio</a></li>
+        <li><a class="nav__link" href="#catalogo" data-nav="catalogo">Catálogo</a></li>
+        <li><a class="nav__link" href="#colecciones" data-nav="colecciones">Colecciones</a></li>
+        <li><a class="nav__link" href="#referencias" data-nav="referencias">Referencias</a></li>
+        <li><a class="nav__link" href="#carrito" data-nav="carrito">Carrito</a></li>
+        <li><a class="nav__link" href="#nosotros" data-nav="nosotros">Sobre nosotros</a></li>
+        <li><a class="nav__link" href="#mision" data-nav="mision">Misión y visión</a></li>
+        <li><a class="nav__link" href="#contacto" data-nav="contacto">Contacto</a></li>
+        <li><a class="nav__link" href="#acceso" data-nav="acceso">Acceso</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="cart-toggle" id="cartToggle" type="button" aria-label="Abrir carrito de compras">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6 5 3H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/></svg>
+        <span class="cart-toggle__badge" id="cartBadge">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ==================== 1. INICIO / HERO ==================== -->
+<section class="hero section" id="inicio">
+  <div class="hero__grid">
+    <div class="hero__content reveal">
+      <span class="badge-soft">Nueva colección 2026</span>
+      <h1 class="hero__title">Viste tu <em>momento</em></h1>
+      <p class="hero__text">
+        En <strong>LUNARA FASHION STORE</strong> creemos que la moda no es tendencia, es identidad.
+        Prendas seleccionadas una a una para que cada persona exprese su personalidad y se sienta
+        cómoda con su propio estilo.
+      </p>
+      <div class="hero__buttons">
+        <a class="btn btn--primary" href="#catalogo">Ver colección</a>
+        <a class="btn btn--ghost" href="#referencias">Comprar ahora</a>
+        <a class="btn btn--soft" href="#contacto">Contáctanos</a>
+      </div>
+      <ul class="hero__stats">
+        <li><strong>20</strong><span>prendas</span></li>
+        <li><strong>13</strong><span>colecciones</span></li>
+        <li><strong>100%</strong><span>envíos a todo el país</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__gallery reveal" data-delay="1">
+      <figure class="hero__card hero__card--tall">
+        <img src="images/thumbs/card/Vestido para Mujer Viscosa con Forro.webp" alt="Vestido para mujer en viscosa con forro, color negro" loading="lazy" width="520" height="693">
+        <figcaption>Vestidos</figcaption>
+      </figure>
+      <figure class="hero__card">
+        <img src="images/thumbs/card/Blazer para Mujer Viscosa Poliéster Tafetán.webp" alt="Blazer para mujer en tafetán color verde petróleo" loading="lazy" width="520" height="693">
+        <figcaption>Blazers</figcaption>
+      </figure>
+      <figure class="hero__card">
+        <img src="images/thumbs/card/Jean para Mujer Denim Algodón Elastano.webp" alt="Jean para mujer en denim claro" loading="lazy" width="520" height="693">
+        <figcaption>Jeans</figcaption>
+      </figure>
+      <span class="hero__deco" aria-hidden="true">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 2. COLECCIONES ==================== -->
+<section class="section section--alt" id="colecciones">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="badge-soft">Colecciones</span>
+      <h2 class="section__title">Encuentra tu <em>categoría</em></h2>
+      <p class="section__lead">Veinte líneas de moda para todos los momentos: unas, el trabajo, la calle o una occasion especial.</p>
+    </header>
+    <div class="collections" id="collectionsGrid"></div>
+  </div>
+</section>
+
+<!-- ==================== 3. CATÁLOGO DE PRODUCTOS ==================== -->
+<section class="section" id="catalogo">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="badge-soft">Catálogo</span>
+      <h2 class="section__title">Nuestra <em>colección</em></h2>
+      <p class="section__lead">Todas nuestras prendas tienen imagen real, precio en pesos colombianos, tallas y colores disponibles.</p>
+    </header>
+
+    <div class="catalog__toolbar reveal">
+      <div class="filters" id="catalogFilters" role="group" aria-label="Filtrar catálogo"></div>
+      <div class="catalog__search">
+        <label class="sr-only" for="searchInput">Buscar prenda</label>
+        <input type="search" id="searchInput" placeholder="Buscar por nombre o material…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="catalog__grid" id="catalogGrid"></div>
+    <p class="catalog__empty" id="catalogEmpty" hidden>No encontramos prendas con ese criterio. Prueba con otro nombre o limpia los filtros.</p>
+  </div>
+</section>
+
+<!-- ==================== 4. REFERENCIAS (20 BOTONES) ==================== -->
+<section class="section section--alt" id="referencias">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="badge-soft">Referencias</span>
+      <h2 class="section__title">Elige tu <em>prenda</em></h2>
+      <p class="section__lead">
+        Pulsa el número de la referencia (1 a 20) para ver el detalle de la prenda, marca la casilla
+        de selección y agrégala al carrito.
+      </p>
+    </header>
+
+    <div class="refs">
+      <div class="refs__grid" id="refsGrid" role="list" aria-label="Referencias de productos"></div>
+
+      <aside class="refs__detail reveal" id="refDetail" aria-live="polite">
+        <!-- El detalle de la referencia se inyecta desde script.js -->
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. CARRITO Y PEDIDOS ==================== -->
+<section class="section" id="carrito">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="badge-soft">Carrito</span>
+      <h2 class="section__title">Revisa tu <em>pedido</em></h2>
+      <p class="section__lead">Confirma tallas, colores y cantidades antes de enviar tu pedido.</p>
+    </header>
+
+    <div class="cart">
+      <div class="cart__items reveal">
+        <div class="cart__head">
+          <h3 class="cart__title">Artículos seleccionados</h3>
+          <button type="button" class="btn btn--link btn--danger" id="clearCart">Vaciar carrito</button>
+        </div>
+        <div id="cartItems" class="cart__list"></div>
+        <p class="cart__empty" id="cartEmpty">Tu carrito está vacío. Explora el <a href="#catalogo">catálogo</a> y elige tus prendas favoritas.</p>
+      </div>
+
+      <aside class="cart__summary reveal" data-delay="1">
+        <h3 class="cart__title">Resumen</h3>
+        <ul class="summary__list">
+          <li><span>Subtotal</span> <strong id="cartSubtotal">$0</strong></li>
+          <li><span>Envío</span> <strong id="cartShipping">$0</strong></li>
+          <li class="summary__total"><span>Total</span> <strong id="cartTotal">$0</strong></li>
+        </ul>
+
+        <form class="checkout" id="checkoutForm" novalidate>
+          <h4 class="checkout__title">Datos de entrega</h4>
+
+          <div class="field">
+            <label for="ckName">Nombre completo *</label>
+            <input type="text" id="ckName" name="nombre" placeholder="Ej. María Fernanda Ruiz" autocomplete="name">
+            <small class="field__error" data-error-for="ckName"></small>
+          </div>
+
+          <div class="field">
+            <label for="ckPhone">Teléfono / WhatsApp *</label>
+            <input type="tel" id="ckPhone" name="telefono" placeholder="Ej. 300 123 4567" autocomplete="tel">
+            <small class="field__error" data-error-for="ckPhone"></small>
+          </div>
+
+          <div class="field">
+            <label for="ckAddress">Dirección de entrega *</label>
+            <input type="text" id="ckAddress" name="direccion" placeholder="Calle 10 # 20-30, barrio, ciudad" autocomplete="street-address">
+            <small class="field__error" data-error-for="ckAddress"></small>
+          </div>
+
+          <div class="field">
+            <label for="ckCity">Ciudad / municipio</label>
+            <input type="text" id="ckCity" name="ciudad" placeholder="Bogotá D.C.">
+            <small class="field__error" data-error-for="ckCity"></small>
+          </div>
+
+          <div class="field">
+            <label for="ckPayment">Método de pago preferido *</label>
+            <select id="ckPayment" name="pago">
+              <option value="">Selecciona una opción</option>
+              <option value="Contra entrega">Contra entrega</option>
+              <option value="Transferencia bancaria">Transferencia bancaria</option>
+              <option value="Nequi">Nequi</option>
+              <option value="Daviplata">Daviplata</option>
+              <option value="PSE / Tarjeta">PSE / Tarjeta de crédito</option>
+            </select>
+            <small class="field__error" data-error-for="ckPayment"></small>
+          </div>
+
+          <div class="field">
+            <label for="ckNotes">Notas del pedido (opcional)</label>
+            <textarea id="ckNotes" name="notas" rows="3" placeholder="Color de entrega, indicaciones especiales…"></textarea>
+          </div>
+
+          <div class="checkout__actions">
+            <button type="submit" class="btn btn--primary btn--block" id="confirmOrder">Confirmar pedido</button>
+            <button type="button" class="btn btn--ghost btn--block" id="reviewOrder">Revisar pedido antes de confirmar</button>
+          </div>
+          <p class="checkout__note" id="checkoutNote" role="status"></p>
+        </form>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. SOBRE NOSOTROS ==================== -->
+<section class="section section--alt" id="nosotros">
+  <div class="container about">
+    <div class="about__media reveal">
+      <img src="images/thumbs/card/Cárdigan para Mujer Acrílico Modal.webp" alt="Cárdigan para mujer en mezcla acrílico modal color burdeos" loading="lazy" width="520" height="693">
+      <span class="about__badge">LUNARA</span>
+    </div>
+    <div class="about__content reveal" data-delay="1">
+      <span class="badge-soft">Sobre nosotros</span>
+      <h2 class="section__title">Moda con <em>propósito</em></h2>
+      <p>
+        LUNARA FASHION STORE es una tienda dedicada a la moda. Seleccionamos prendas para distintas
+        ocasiones —el trabajo, la universidad, una salida o un evento especial— y las presented con
+        información clara: precio en pesos, tallas y colores reales.
+      </p>
+      <p>
+        Nuestro objetivo es simple: que cada cliente encuentre la prenda que necesita, la entienda
+        completamente y la compre con confianza. Por eso escribimos descripciones honestas, mostramos
+        fotos reales y estamos disponibles para resolver cualquier duda por WhatsApp.
+      </p>
+      <ul class="about__list">
+        <li><span>✦</span> Catálogo revisado y actualizado</li>
+        <li><span>✦</span> Precios claros en pesos colombianos</li>
+        <li><span>✦</span> Atención personalizada por WhatsApp</li>
+        <li><span>✦</span> Envíos a todo el país</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. MISIÓN, VISIÓN Y OBJETIVOS ==================== -->
+<section class="section" id="mision">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="badge-soft">Identidad de marca</span>
+      <h2 class="section__title">Misión, visión y <em>objetivos</em></h2>
+    </header>
+
+    <div class="pillars">
+      <article class="pillar pillar--lilac reveal">
+        <span class="pillar__icon" aria-hidden="true">☾</span>
+        <h3>Misión</h3>
+        <p>Ofrecer prendas de vestir modernas, de buena calidad y a precios accesibles, ayudando a cada cliente a expresar su personalidad y sentirse cómodo con su propio estilo.</p>
+      </article>
+
+      <article class="pillar pillar--rose reveal" data-delay="1">
+        <span class="pillar__icon" aria-hidden="true">✦</span>
+        <h3>Visión</h3>
+        <p>Convertirnos en una tienda de moda reconocida por su creatividad, atención al cliente y variedad de prendas, creciendo en el mercado digital y llegando a nuevos clientes.</p>
+      </article>
+
+      <article class="pillar pillar--beige reveal" data-delay="2">
+        <span class="pillar__icon" aria-hidden="true">❖</span>
+        <h3>Valores</h3>
+        <p>Elegancia accesible, honestidad en la información, cuidado de cada detalle y una experiencia de compra cercana, cálida y respetuosa.</p>
+      </article>
+    </div>
+
+    <div class="goals reveal">
+      <h3 class="goals__title">Nuestros objetivos</h3>
+      <ol class="goals__grid">
+        <li>Ofrecer un catálogo variado y actualizado.</li>
+        <li>Brindar una atención amable y personalizada.</li>
+        <li>Facilitar las compras mediante una página web sencilla.</li>
+        <li>Promover la confianza y satisfacción de los clientes.</li>
+        <li>Fortalecer la presencia de la marca en las redes sociales.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. CONTACTO ==================== -->
+<section class="section section--alt" id="contacto">
+  <div class="container contact">
+    <div class="contact__info reveal">
+      <span class="badge-soft">Contacto</span>
+      <h2 class="section__title">Hablemos de tu <em>estilo</em></h2>
+      <p>¿Tienes dudas sobre una talla, un color o el estado de tu pedido? Escríbenos y te respondemos el mismo día.</p>
+
+      <ul class="contact__list">
+        <li><span aria-hidden="true">✉</span> <a id="mailLink" href="#">contacto@lunarafashionstore.com</a></li>
+        <li><span aria-hidden="true">☎</span> <a id="phoneLink" href="#">+57 300 123 4567</a></li>
+        <li><span aria-hidden="true">◷</span> Lunes a sábado, 9:00 a.m. – 6:00 p.m.</li>
+        <li><span aria-hidden="true">◉</span> Envíos nacionales desde $15.000</li>
+      </ul>
+
+      <div class="socials socials--block">
+        <a class="social social--instagram" id="socialInstagram" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social social--facebook" id="socialFacebook" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V7c0-.8.2-1.2 1.4-1.2H17V3h-2.6C11.6 3 10.5 4.3 10.5 6.8v1.7H9V11h1.5v10H14V11h2.4l.3-2.5H14Z" fill="currentColor"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="social social--tiktok" id="socialTiktok" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.4 2.2 1.8 3.6 4 3.8v2.6c-1.5 0-2.8-.5-4-1.3v5.9A5.7 5.7 0 1 1 9.3 8.5v2.7a3 3 0 1 0 3 3V3H15Z" fill="currentColor"/></svg>
+          <span>TikTok</span>
+        </a>
+        <a class="social social--whatsapp" id="socialWhatsapp" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm0 2.2a6.8 6.8 0 1 1-3.5 12.5l-.3-.2-2.4.6.6-2.3-.2-.3A6.8 6.8 0 0 1 12 5.2Zm-3 3c-.2 0-.4.1-.5.3-.2.2-.6.6-.6 1.4s.6 1.6.7 1.7c.1.1 1.1 1.8 2.8 2.5 1.4.6 1.7.5 2 .4.3-.1 1-.4 1.2-.8.1-.4.1-.7.1-.8l-.5-.3s-1.3-.6-1.5-.7c-.2 0-.3-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.4-1.8-1.1-.7-.6-1.1-1.3-1.2-1.6-.1-.2 0-.4.1-.5l.4-.5.2-.4c.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4H9Z" fill="currentColor"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact__form card reveal" id="contactForm" data-delay="1" novalidate>
+      <h3 class="card__title">Escríbenos</h3>
+
+      <div class="field">
+        <label for="ctName">Nombre *</label>
+        <input type="text" id="ctName" name="nombre" placeholder="Tu nombre" autocomplete="name">
+        <small class="field__error" data-error-for="ctName"></small>
+      </div>
+
+      <div class="field">
+        <label for="ctEmail">Correo electrónico *</label>
+        <input type="email" id="ctEmail" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email">
+        <small class="field__error" data-error-for="ctEmail"></small>
+      </div>
+
+      <div class="field">
+        <label for="ctSubject">Asunto *</label>
+        <input type="text" id="ctSubject" name="asunto" placeholder="Consulta de talla, pedido…">
+        <small class="field__error" data-error-for="ctSubject"></small>
+      </div>
+
+      <div class="field">
+        <label for="ctMessage">Mensaje *</label>
+        <textarea id="ctMessage" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+        <small class="field__error" data-error-for="ctMessage"></small>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+      <p class="form__status" id="contactStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ==================== 9. ACCESO Y SEGURIDAD ==================== -->
+<section class="section" id="acceso">
+  <div class="container access">
+    <div class="access__card card reveal">
+      <span class="badge-soft">Acceso</span>
+      <h2 class="section__title">Ingresa a tu <em>cuenta</em></h2>
+
+      <div class="tabs" role="tablist" aria-label="Acceso y registro">
+        <button class="tab is-active" id="tabLogin" role="tab" aria-selected="true" aria-controls="panelLogin" type="button">Iniciar sesión</button>
+        <button class="tab" id="tabRegister" role="tab" aria-selected="false" aria-controls="panelRegister" type="button">Crear cuenta</button>
+      </div>
+
+      <form id="loginForm" class="tab__panel" role="tabpanel" aria-labelledby="tabLogin" novalidate>
+        <div class="field">
+          <label for="loginEmail">Correo electrónico *</label>
+          <input type="email" id="loginEmail" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email">
+          <small class="field__error" data-error-for="loginEmail"></small>
+        </div>
+        <div class="field">
+          <label for="loginPass">Contraseña *</label>
+          <div class="field__wrap">
+            <input type="password" id="loginPass" name="contrasena" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
+            <button type="button" class="field__toggle" data-toggle-password="loginPass" aria-label="Mostrar contraseña">Ver</button>
+          </div>
+          <small class="field__error" data-error-for="loginPass"></small>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Iniciar sesión</button>
+        <p class="form__status" id="loginStatus" role="status"></p>
+      </form>
+
+      <form id="registerForm" class="tab__panel" role="tabpanel" aria-labelledby="tabRegister" hidden novalidate>
+        <div class="field">
+          <label for="regName">Nombre completo *</label>
+          <input type="text" id="regName" name="nombre" placeholder="Tu nombre" autocomplete="name">
+          <small class="field__error" data-error-for="regName"></small>
+        </div>
+        <div class="field">
+          <label for="regEmail">Correo electrónico *</label>
+          <input type="email" id="regEmail" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email">
+          <small class="field__error" data-error-for="regEmail"></small>
+        </div>
+        <div class="field">
+          <label for="regPass">Contraseña *</label>
+          <div class="field__wrap">
+            <input type="password" id="regPass" name="contrasena" placeholder="Mínimo 8 caracteres" autocomplete="new-password">
+            <button type="button" class="field__toggle" data-toggle-password="regPass" aria-label="Mostrar contraseña">Ver</button>
+          </div>
+          <small class="field__error" data-error-for="regPass"></small>
+        </div>
+        <div class="field">
+          <label for="regPass2">Repetir contraseña *</label>
+          <input type="password" id="regPass2" name="contrasena2" placeholder="Repite tu contraseña" autocomplete="new-password">
+          <small class="field__error" data-error-for="regPass2"></small>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Crear cuenta</button>
+        <p class="form__status" id="registerStatus" role="status"></p>
+      </form>
+    </div>
+
+    <aside class="access__notes card card--soft reveal" data-delay="1">
+      <h3 class="card__title">Seguridad de tus datos</h3>
+      <ul class="notes__list">
+        <li>
+          <strong>No se guardan contraseñas.</strong>
+          Esta página es una demostración visual: los datos escritos aquí solo se validan en el
+          navegador y se descartan al recargar.
+        </li>
+        <li>
+          <strong>Conexión segura (HTTPS).</strong>
+          Al publicar la tienda, toda la información del cliente debe viajar cifrada.
+        </li>
+        <li>
+          <strong>Autenticación en el servidor.</strong>
+          El inicio de sesión real requiere un backend que verifique credenciales, aplique
+          cifrado de contraseñas y controle los intentos de acceso.
+        </li>
+        <li>
+          <strong>Privacidad.</strong>
+          Solicitar únicamente los datos imprescindibles para la entrega y no compartirlos con terceros.
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== PIE DE PÁGINA ==================== -->
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <span class="brand__logo brand__logo--footer" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="logo__svg">
+          <path d="M32 10c-4 0-7.2 3.2-7.2 7.2 0 2.6 1.4 4.9 3.5 6.1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M28.3 23.3 11 38.9c-1.6 1.4-.5 4 1.8 4h38.4c2.3 0 3.4-2.6 1.8-4L35.7 23.3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M47 5a10.5 10.5 0 1 0 7.8 17.3A12.5 12.5 0 0 1 47 5Z" fill="currentColor" opacity="0.85"/>
+          <path d="M50.5 27c.75 3.6 1.85 4.7 5.45 5.45-3.6.75-4.7 1.85-5.45 5.45-.75-3.6-1.85-4.7-5.45-5.45 3.6-.75 4.7-1.85 5.45-5.45Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <p class="footer__name">LUNARA FASHION STORE</p>
+      <p class="footer__slogan">Tu estilo, tu esencia, tu momento</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Enlaces del pie de página">
+      <h4>Explora</h4>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#referencias">Referencias</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+
+    <nav class="footer__links" aria-label="Enlaces de empresa">
+      <h4>Empresa</h4>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#mision">Misión y visión</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#acceso">Acceso</a>
+    </nav>
+
+    <div class="footer__social">
+      <h4>Síguenos</h4>
+      <div class="socials">
+        <a class="social social--instagram" id="socialInstagram2" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg></a>
+        <a class="social social--facebook" id="socialFacebook2" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V7c0-.8.2-1.2 1.4-1.2H17V3h-2.6C11.6 3 10.5 4.3 10.5 6.8v1.7H9V11h1.5v10H14V11h2.4l.3-2.5H14Z" fill="currentColor"/></svg></a>
+        <a class="social social--tiktok" id="socialTiktok2" href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.4 2.2 1.8 3.6 4 3.8v2.6c-1.5 0-2.8-.5-4-1.3v5.9A5.7 5.7 0 1 1 9.3 8.5v2.7a3 3 0 1 0 3 3V3H15Z" fill="currentColor"/></svg></a>
+        <a class="social social--whatsapp" id="socialWhatsapp2" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Zm0 2.2a6.8 6.8 0 1 1-3.5 12.5l-.3-.2-2.4.6.6-2.3-.2-.3A6.8 6.8 0 0 1 12 5.2Zm-3 3c-.2 0-.4.1-.5.3-.2.2-.6.6-.6 1.4s.6 1.6.7 1.7c.1.1 1.1 1.8 2.8 2.5 1.4.6 1.7.5 2 .4.3-.1 1-.4 1.2-.8.1-.4.1-.7.1-.8l-.5-.3s-1.3-.6-1.5-.7c-.2 0-.3-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1-.2-.1-.9-.4-1.8-1.1-.7-.6-1.1-1.3-1.2-1.6-.1-.2 0-.4.1-.5l.4-.5.2-.4c.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4H9Z" fill="currentColor"/></svg></a>
+      </div>
+      <p class="footer__note">Hecho con cariño en Colombia 🇨🇴</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© <span id="year">2026</span> LUNARA FASHION STORE. Todos los derechos reservados.</p>
+    <p>Precios en pesos colombianos (COP). Proyecto académico — demostración comercial.</p>
+  </div>
+</footer>
+
+<!-- ==================== CHATBOT ==================== -->
+<div class="chatbot" id="chatbot">
+  <button class="chatbot__toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+    <svg class="chatbot__icon chatbot__icon--open" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="15.5" cy="12" r="1.2" fill="currentColor"/></svg>
+    <svg class="chatbot__icon chatbot__icon--close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <span class="chatbot__pulse" aria-hidden="true"></span>
+  </button>
+
+  <div class="chatbot__panel" id="chatbotPanel" role="dialog" aria-label="Chat de atención al cliente" aria-modal="false" hidden>
+    <header class="chatbot__header">
+      <span class="chatbot__avatar" aria-hidden="true">☾</span>
+      <div>
+        <strong>LUNARA Asistente</strong>
+        <small><span class="chatbot__status"></span> En línea</small>
+      </div>
+    </header>
+
+    <div class="chatbot__log" id="chatbotLog" aria-live="polite"></div>
+
+    <div class="chatbot__options" id="chatbotOptions"></div>
+
+    <form class="chatbot__form" id="chatbotForm">
+      <label class="sr-only" for="chatbotInput">Escribe tu mensaje</label>
+      <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje…" autocomplete="off">
+      <button type="submit" aria-label="Enviar mensaje">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20l18-8L3 4l4 8-4 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ==================== MODAL RESUMEN DE PEDIDO ==================== -->
+<div class="modal" id="orderModal" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" type="button" data-close-modal aria-label="Cerrar">×</button>
+    <h3 id="modalTitle" class="modal__title">Revisión del pedido</h3>
+    <div class="modal__body" id="modalBody"></div>
+    <div class="modal__actions">
+      <button class="btn btn--ghost" type="button" data-close-modal>Volver</button>
+      <button class="btn btn--primary" type="button" id="modalConfirm">Confirmar pedido</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
